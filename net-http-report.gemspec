@@ -9,7 +9,11 @@ Gem::Specification.new do |spec|
   spec.email         = ['engineering@salsify.com']
 
   spec.summary       = 'Adds support for HTTP REPORT requests to Net::HTTP.'
-  spec.description   = spec.summary
+  spec.description   = <<DESC
+Monkey patches the Net::HTTP standard library to add the HTTP REPORT
+Request class that integrates with the rest of the Net::HTTP suite.
+DESC
+
   spec.homepage      = 'https://github.com/salsify/net-http-report'
 
   spec.license       = 'MIT'
@@ -32,6 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.4'
   spec.add_development_dependency 'salsify_rubocop', '~> 0.46.0'
-  spec.add_development_dependency 'overcommit'
+  spec.add_development_dependency 'overcommit', '~> 0.37'
 
 end
