@@ -1,4 +1,4 @@
-# net-http-report
+# Net::HTTP::Report Changelog
 
 ## v0.1.0
-- Initial version
+- Initial version. Adds Report request class to Net::HTTP module.
