@@ -1,3 +1,4 @@
-# Top-level gem module
-module Net::HTTP::Report
-end
+# rubocop:disable Style/FileName
+require 'net/http'
+require 'net/http/report'
+# rubocop:enable Style/FileName
