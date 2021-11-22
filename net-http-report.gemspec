@@ -20,8 +20,9 @@ Gem::Specification.new do |spec|
   # Set 'allowed_push_post' to control where this gem can be published.
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
+    spec.metadata['rubygems_mfa_required'] = 'true'
   else
-    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+    raise 'RubyGems 2.0 or newer is required to set allowed_push_host.'
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
